@@ -3,14 +3,25 @@ import React from 'react'
 
 import featuredIcon from '../images/featuredicon.png'
 
+const renderCardText = (content) => {
+  if(content > 0){
+    return  <Text style={styles.cardText}>{content}</Text>
+  }
+  return(
+    <Text style={styles.cardText}>{content}</Text>
+  )
+}
+
 const Card = ({width,height, round, title, icon, ...props},) => {
+  const {content} = props;
   return (
     <View style={[{ width: width, height: height, borderRadius: round, ...props },styles.cotnainer,]}>
       <Text style={styles.cardTitle}>{ title }</Text>
-      <Text style={styles.cardText}>Some of the importants duas for everyday.</Text>
-      <View style={styles.cardIcon}>
+      {renderCardText(content)}
+      {icon == false ? null : <View style={styles.cardIcon}>
         <Image source={featuredIcon} />
-      </View>
+      </View>}
+      
     </View>
   )
 }
@@ -32,7 +43,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginTop: 12,
         color: '#FFFFFF',
-        maxWidth: "70%"
     },
     cardIcon: {
         position: 'absolute',
