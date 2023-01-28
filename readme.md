@@ -4,7 +4,24 @@ It's a app for muslim brothers and sister to find quickly some of the
 poweful and useful duas, tips, info etc. May allah gives us the opportunity to help each other through our deeds.
 
 
-Project Todo:
+### Project Possible Category
+
+- Daily Duas (such as morning and evening prayers)
+- Duas for specific occasions or events (such as weddings, funerals, etc.)
+- Duas for specific purposes (such as protection, guidance, forgiveness, etc.)
+- Duas from the Quran
+- Duas from Hadith (the sayings and actions of the Prophet Muhammad)
+- Audio recitation of Duas in multiple languages.
+- Translation of Duas in multiple languages.
+- Duas for children
+- Duas for women
+- Duas for Travelling
+- Duas for protection from evil and jinn.
+- Duas for health and healing
+- Duas for success and prosperity
+- Duas for forgiveness and repentance.
+
+### Project Todo:
 
 - [ ]  logo and app icon design
 - [ ]  icon set selection
