@@ -10,7 +10,6 @@ Project Todo:
 - [ ]  icon set selection
 - [ ]  font selection and include into the project
 - [ ]  app descripton
-- [ ]  
 - [x]  scafolding react native app
 - [x]  basic folder creation
 - [x]  react navigation setup
