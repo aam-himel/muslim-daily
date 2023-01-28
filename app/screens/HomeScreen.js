@@ -16,14 +16,12 @@ const notification = require('../images/notification.png');
 
 const HomeScreen = ({navigation}) => {
   const cardText = 'A collection of powerful duas starting with rabbana.';
-  const cardTextAsmaulHusna = 'A collection of 99 names of Allah';
-  // const cardText = "A collection of powerful duas starting with rabbana."
-  // const cardText = "A collection of powerful duas starting with rabbana."
+  const cardTextAsmaulHusna = 'Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )';
+  const cardTextDuasDaily = 'Some of the importants duas for everyday.';
   const {colors} = useTheme();
 
   return (
-    <SafeAreaView
-      style={[{backgroundColor: colors.background}, styles.container]}>
+    <SafeAreaView style={[styles.container]}>
       <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
         <View style={styles.hero}>
           <View>
@@ -44,6 +42,7 @@ const HomeScreen = ({navigation}) => {
               width={'100%'}
               height={152}
               round={20}
+              content={cardTextDuasDaily}
             />
           </Pressable>
           <View
@@ -56,14 +55,14 @@ const HomeScreen = ({navigation}) => {
             <Card
               title={'Dua Rabbana'}
               width={158}
-              height={180}
+              height={190}
               round={20}
               icon={false}
               content={cardText}
             />
             <Pressable onPress={() => navigation.navigate('AsmaulHusna')}>
               <Card
-                title={'Asmaul Husna'}
+                title={'Allah’s 99 names.'}
                 width={158}
                 height={224}
                 round={20}
@@ -77,6 +76,7 @@ const HomeScreen = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'flex-end',
               justifyContent: 'space-between',
+              marginTop: 12,
             }}>
             <Card
               title={'Daily Duas.'}
@@ -85,7 +85,7 @@ const HomeScreen = ({navigation}) => {
               round={20}
               marginTop={-24}
             />
-            <Card title={'Daily Duas.'} width={158} height={180} round={20} />
+            <Card title={'Daily Duas.'} width={158} height={190} round={20} />
           </View>
         </View>
       </ScrollView>
@@ -98,8 +98,9 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginHorizontal: 24,
-    marginTop: 24,
+    paddingHorizontal: 24,
+    paddingTop: 24,
+    backgroundColor: '#F6F4FE',
   },
   scroll: {flex: 1},
   hero: {

@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     cardIcon: {
         position: 'absolute',
         top: "40%",
-        right: '10%',
+        right: '8%',
 
     }
 })

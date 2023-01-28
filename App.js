@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { View, Text } from 'react-native';
-import { NavigationContainer, } from '@react-navigation/native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { NavigationContainer, useNavigation, } from '@react-navigation/native';
 import { createNativeStackNavigator, DefaultTheme, DarkTheme } from '@react-navigation/native-stack';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {HomeScreen, DailyDuas, DuaRabbana, AsmaulHusna} from './app/screens'
 import { theme } from './app/config/theme';
@@ -13,7 +14,7 @@ function App(){
   const scheme = useColorScheme();
   return (
 
-    <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme} nav>
        <Stack.Navigator>
         <Stack.Screen name='HomeScreen' component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name='DailyDuas' component={DailyDuas} options={{
@@ -27,7 +28,8 @@ function App(){
           },
         }} />
         <Stack.Screen name='DuaRabbana' component={DuaRabbana} options={{ headerShown: false }} />
-        <Stack.Screen name='AsmaulHusna' component={AsmaulHusna}  />
+        <Stack.Screen name='AsmaulHusna' component={AsmaulHusna} 
+        options={{headerTransparent: true,  }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
