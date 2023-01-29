@@ -18,6 +18,9 @@ const AsmaulHusna = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({
+      title: '',
+      headerTitleAlign: 'center',
+      headerTransparent: true,
       headerLeft: () => (
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Icon name="chevron-back-outline" size={24} color="black" />
@@ -30,39 +33,52 @@ const AsmaulHusna = () => {
   };
 
   return (
-    <ScrollView style={styles.contaier}>
-      <Text style={styles.title}>Allah’s 99 names. </Text>
-      <Text style={styles.subTitle}>
-        Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
-      </Text>
-      <View>
-        <FlatList
-          data={asmaulHusna}
-          renderItem={renderItem}
-          keyExtractor={item => item.id}
-          scrollEnabled={false}
-        />
+    <>
+      <View style={styles.top}>
+        <Text style={styles.title}>Allah’s 99 names. </Text>
+        <Text style={styles.subTitle}>
+          Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
+        </Text>
       </View>
-    </ScrollView>
+      <ScrollView style={styles.contaier}>
+        <View>
+          <FlatList
+            data={asmaulHusna}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+            scrollEnabled={false}
+          />
+        </View>
+      </ScrollView>
+    </>
   );
 };
 
 export default AsmaulHusna;
 
 const styles = StyleSheet.create({
+  top: {
+    height: 100,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    backgroundColor: '#8B6BEC',
+  },
   contaier: {
     flex: 1,
-    marginTop: 70,
-    backgroundColor: '#F6F4FE',
+    backgroundColor: '#8B6BEC',
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#000',
+    color: '#fff',
+    textAlign: 'center',
   },
   subTitle: {
     fontSize: 16,
+    color: '#fff',
+
     fontWeight: 'normal',
     marginBottom: 16,
+    textAlign: 'center',
   },
 });

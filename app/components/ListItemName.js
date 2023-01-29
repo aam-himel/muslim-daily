@@ -2,20 +2,21 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const ListItemName = ({item}) => {
-  const {arabic, english, englishTranslation, bangla, banglaTranslation} = item;
+  const {id, arabic, english, englishTranslation, bangla, banglaTranslation} =
+    item;
   return (
     <View style={styles.listContainer}>
       <View style={styles.container}>
         <View>
-          <Text>1</Text>
+          <Text style={styles.number}>{id}</Text>
         </View>
         <View>
-          <Text>{english}</Text>
-          <Text>{englishTranslation}</Text>
+          <Text style={styles.english}>{english}</Text>
+          <Text style={styles.englishTranslation}>{englishTranslation}</Text>
         </View>
-        <View>
-          <Text>{bangla}</Text>
-          <Text>{banglaTranslation}</Text>
+        <View style={styles.right}>
+          <Text style={styles.arabic}>{arabic}</Text>
+          <Text style={styles.banglaTranslation}>{banglaTranslation}</Text>
         </View>
       </View>
     </View>
@@ -26,6 +27,7 @@ export default ListItemName;
 
 const styles = StyleSheet.create({
   listContainer: {
+    justifyContent: 'center',
     height: 100,
     backgroundColor: 'white',
     marginBottom: 12,
@@ -46,9 +48,48 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  arabic: {},
-  english: {},
-  englishTranslation: {},
-  bangla: {},
-  banglaTranslation: {},
+  number: {
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    width: 34,
+    height: 34,
+    borderRadius: 4,
+    backgroundColor: '#714AE8',
+    alignItems: 'center',
+    color: 'white',
+    fontWeight: 'bold',
+    marginRight: 12,
+  },
+
+  english: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000',
+    maxWidth: 120,
+  },
+  englishTranslation: {
+    fontSize: 14,
+    color: '#000',
+    maxWidth: 150,
+  },
+  arabic: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000',
+    textAlign: 'right',
+  },
+  banglaTranslation: {
+    fontWeight: 'bold',
+    color: '#000',
+    textAlign: 'right',
+  },
+  right: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  trancate: {
+    fontWeight: 'bold',
+    color: '#000',
+    textAlign: 'right',
+  },
 });
