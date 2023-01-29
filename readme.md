@@ -34,9 +34,9 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [ ]  tav navigator setup
 - [x]  home screen design complete with routing
 - [ ]  daily duas screen
-- [ ]  dua rabbana
-- [ ]  asmaul husna
-- [ ]  undefined
+- [ ]  dua rabbana screen
+- [x]  asmaul husna screen
+- [ ]  undefined 
 - [ ]  undefined
 - [ ]  prepare all the data related to these screens
 - [ ]  local storeage access and save
