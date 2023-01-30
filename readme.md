@@ -25,6 +25,7 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 
 - [ ]  logo and app icon design
 - [ ]  icon set selection
+- [ ]  lottie animation ready
 - [ ]  font selection and include into the project
 - [ ]  app descripton
 - [x]  scafolding react native app
@@ -32,12 +33,14 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [x]  react navigation setup
 - [x]  stack navigator setup
 - [ ]  tav navigator setup
-- [x]  home screen design complete with routing
-- [ ]  daily duas screen
-- [ ]  dua rabbana screen
-- [x]  asmaul husna screen
-- [ ]  undefined 
-- [ ]  undefined
+- [x]  lottie animation library
+- [ ]  Screens
+  - [x]  home screen
+  - [ ]  daily duas screen
+  - [ ]  dua rabbana screen
+  - [x]  asmaul husna screen
+  - [ ]  undefined 
+  - [ ]  undefined
 - [ ]  prepare all the data related to these screens
 - [ ]  local storeage access and save
 - [ ]  location access
