@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {HomeScreen, DailyDuas, DuaRabbana, AsmaulHusna} from './app/screens';
 import {theme} from './app/config/theme';
 import {useColorScheme} from 'react-native';
+import SkiaPlayground from './app/screens/SkiaPlayground';
 
 function App() {
   const Stack = createNativeStackNavigator();
@@ -30,6 +31,7 @@ function App() {
           component={DailyDuas}
           options={{
             title: 'Daily Duas',
+            headerShown: false,
           }}
         />
         <Stack.Screen
@@ -37,7 +39,13 @@ function App() {
           component={DuaRabbana}
           options={{headerShown: false}}
         />
+
         <Stack.Screen name="AsmaulHusna" component={AsmaulHusna} />
+        <Stack.Screen
+          name="Playground"
+          component={SkiaPlayground}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

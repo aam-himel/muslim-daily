@@ -10,6 +10,7 @@ import {
 import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Lottie from 'lottie-react-native';
 
 import asmaulHusna from '../data/asmaulHusna';
 import ListItemName from '../components/ListItemName';
@@ -39,6 +40,17 @@ const AsmaulHusna = () => {
         <Text style={styles.subTitle}>
           Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
         </Text>
+        <View style={styles.scrolldown}>
+          <Lottie
+            style={{
+              width: 24,
+              color: 'white',
+            }}
+            source={require('../lotties/scrold.json')}
+            autoPlay
+            loop
+          />
+        </View>
       </View>
       <ScrollView style={styles.contaier}>
         <View>
@@ -58,8 +70,8 @@ export default AsmaulHusna;
 
 const styles = StyleSheet.create({
   top: {
-    height: 100,
-    paddingVertical: 16,
+    height: 180,
+    paddingVertical: 24,
     paddingHorizontal: 16,
     backgroundColor: '#8B6BEC',
   },
@@ -80,5 +92,11 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     marginBottom: 16,
     textAlign: 'center',
+  },
+  scrolldown: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

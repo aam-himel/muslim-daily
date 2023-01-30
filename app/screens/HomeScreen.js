@@ -10,6 +10,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {useTheme} from '@react-navigation/native';
+import Lottie from 'lottie-react-native';
+
 import Card from '../components/Card';
 
 const notification = require('../images/notification.png');
@@ -28,9 +30,18 @@ const HomeScreen = ({navigation}) => {
             <Text style={styles.title}>Muslim </Text>
             <Text style={[{marginTop: -16}, styles.title]}>Daily. </Text>
           </View>
-          <TouchableOpacity>
-            <Image source={notification} />
-          </TouchableOpacity>
+          <Lottie
+            style={{
+              width: 150,
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              zIndex: -1,
+            }}
+            source={require('../lotties/bg.json')}
+            autoPlay
+            loop
+          />
         </View>
 
         <View style={styles.gap}></View>
@@ -85,7 +96,15 @@ const HomeScreen = ({navigation}) => {
               round={20}
               marginTop={-24}
             />
-            <Card title={'Daily Duas.'} width={158} height={190} round={20} />
+            <Pressable onPress={() => navigation.navigate('Playground')}>
+              <Card
+                title={'Skia Playground'}
+                width={158}
+                height={190}
+                round={20}
+                icon={false}
+              />
+            </Pressable>
           </View>
         </View>
       </ScrollView>
