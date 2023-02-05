@@ -3,7 +3,6 @@ import {
   Text,
   View,
   TouchableOpacity,
-  SafeAreaView,
   ScrollView,
   FlatList,
 } from 'react-native';
@@ -35,24 +34,24 @@ const AsmaulHusna = () => {
 
   return (
     <>
-      <View style={styles.top}>
-        <Text style={styles.title}>Allah’s 99 names. </Text>
-        <Text style={styles.subTitle}>
-          Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
-        </Text>
-        <View style={styles.scrolldown}>
-          <Lottie
-            style={{
-              width: 24,
-              color: 'white',
-            }}
-            source={require('../lotties/scrold.json')}
-            autoPlay
-            loop
-          />
-        </View>
-      </View>
       <ScrollView style={styles.contaier}>
+        <View style={styles.top}>
+          <Text style={styles.title}>Allah’s 99 names. </Text>
+          <Text style={styles.subTitle}>
+            Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
+          </Text>
+          <View style={styles.scrolldown}>
+            <Lottie
+              style={{
+                width: 24,
+                color: 'white',
+              }}
+              source={require('../lotties/scrold.json')}
+              autoPlay
+              loop
+            />
+          </View>
+        </View>
         <View>
           <FlatList
             data={asmaulHusna}

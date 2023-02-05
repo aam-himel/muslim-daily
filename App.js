@@ -34,11 +34,7 @@ function App() {
             headerShown: false,
           }}
         />
-        <Stack.Screen
-          name="DuaRabbana"
-          component={DuaRabbana}
-          options={{headerShown: false}}
-        />
+        <Stack.Screen name="DuaRabbana" component={DuaRabbana} />
 
         <Stack.Screen name="AsmaulHusna" component={AsmaulHusna} />
         <Stack.Screen

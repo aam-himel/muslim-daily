@@ -63,14 +63,17 @@ const HomeScreen = ({navigation}) => {
               alignItems: 'flex-start',
               justifyContent: 'space-between',
             }}>
-            <Card
-              title={'Dua Rabbana'}
-              width={158}
-              height={190}
-              round={20}
-              icon={false}
-              content={cardText}
-            />
+            <Pressable onPress={() => navigation.navigate('DuaRabbana')}>
+              <Card
+                title={'Dua Rabbana'}
+                width={158}
+                height={190}
+                round={20}
+                icon={false}
+                content={cardText}
+              />
+            </Pressable>
+
             <Pressable onPress={() => navigation.navigate('AsmaulHusna')}>
               <Card
                 title={'Allah’s 99 names.'}

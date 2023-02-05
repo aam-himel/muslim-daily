@@ -3,11 +3,7 @@ import React from 'react';
 import GradientBg from '../components/GradientBg';
 
 const DailyDuas = () => {
-  return (
-    <View style={styles.container}>
-      <GradientBg />
-    </View>
-  );
+  return <View style={styles.container}>{/* <GradientBg /> */}</View>;
 };
 
 export default DailyDuas;
