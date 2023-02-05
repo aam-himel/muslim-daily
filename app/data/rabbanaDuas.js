@@ -1,6 +1,6 @@
 const rabbanaDuas = [
   {
-    id: 101,
+    id: 1,
     arabic: 'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ العَلِيمُ',
     englishTranslation:
       'Our Lord! Accept (this service) from us: For Thou art the All-Hearing, the All-knowing.',
@@ -11,7 +11,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 102,
+    id: 2,
     arabic:
       'رَبَّنَا وَاجْعَلْنَا مُسْلِمَیْنِ لَكَ وَمِن ذُرِّیَّتِنَآ أُمَّةً مُّسْلِمَةً لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَیْنَآ إِنَّكَ أَنتَ التَّوَّابُ الرَّحِیمُ',
     englishTranslation:
@@ -24,7 +24,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 103,
+    id: 3,
     arabic:
       'رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْءَاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ',
     englishTranslation:
@@ -37,7 +37,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 104,
+    id: 4,
     arabic:
       'رَبَّنَآ أَفْرِغْ عَلَیْنَا صَبْراً وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى القَوْمِ الكَافِرِینَ',
     englishTranslation:
@@ -50,7 +50,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 105,
+    id: 5,
     arabic: 'رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا',
     englishTranslation:
       'Our Lord! Do not punish us if we forget or make a mistake',
@@ -61,7 +61,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 106,
+    id: 6,
     arabic:
       'رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا',
     englishTranslation:
@@ -74,7 +74,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 107,
+    id: 7,
     arabic:
       'رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ',
     englishTranslation:
@@ -87,7 +87,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 108,
+    id: 8,
     arabic:
       'رَبَّنَا لاَ تُزِغْ قُلُوبَنَا بَعْدَ إِذْ ھَدَیْتَنَا وَھَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَھَّابُ',
     englishTranslation:
@@ -100,7 +100,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 109,
+    id: 9,
     arabic:
       'رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ',
     englishTranslation:
@@ -113,7 +113,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 110,
+    id: 10,
     arabic:
       'رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ',
     englishTranslation:
@@ -126,7 +126,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 111,
+    id: 11,
     arabic:
       'رَبَّنَآ ءَامَنَّا بِمَآ أَنزَلْتَ وَٱتَّبَعْنَا ٱلرَّسُولَ فَٱكْتُبْنَا مَعَ ٱلشَّٰھِدِینَ',
     englishTranslation:
@@ -139,7 +139,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 112,
+    id: 12,
     arabic:
       'رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ',
     englishTranslation:
@@ -152,7 +152,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 113,
+    id: 13,
     arabic:
       'رَبَّنَا مَا خَلَقْتَ هَٰذَا بَٰطِلًا سُبْحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ',
     englishTranslation:
@@ -165,7 +165,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 114,
+    id: 14,
     arabic:
       'رَبَّنَآ إِنَّكَ مَن تُدْخِلِ ٱلنَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ وَمَا لِلظَّٰلِمِينَ مِنْ أَنصَارٍ',
     englishTranslation:
@@ -178,7 +178,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 115,
+    id: 15,
     arabic:
       'رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا',
     englishTranslation:
@@ -191,7 +191,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 116,
+    id: 16,
     arabic:
       'رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَیِّئَاتِنَا وَتَوَفَّنَا مَعَ الأبْرَارِ',
     englishTranslation:
@@ -204,7 +204,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 117,
+    id: 17,
     arabic:
       'رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ ٱلْقِيَٰمَةِ ۗ إِنَّكَ لَا تُخْلِفُ ٱلْمِيعَادَ',
     englishTranslation:
@@ -217,7 +217,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 118,
+    id: 18,
     arabic: 'رَبَّنَآ ءَامَنَّا فَٱكْتُبْنَا مَعَ ٱلشَّٰهِدِينَ',
     englishTranslation:
       'Our Lord, we have believed, so register us among the witnesses.',
@@ -228,7 +228,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 119,
+    id: 19,
     arabic:
       'رَبَّنَآ أَنزِلْ عَلَيْنَا مَآئِدَةً مِّنَ ٱلسَّمَآءِ تَكُونُ لَنَا عِيدًا لِّأَوَّلِنَا وَءَاخِرِنَا وَءَايَةً مِّنكَ ۖ وَٱرْزُقْنَا وَأَنتَ خَيْرُ ٱلرَّٰزِقِينَ',
     englishTranslation:
@@ -241,7 +241,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 120,
+    id: 20,
     arabic:
       'رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ',
     englishTranslation:
@@ -254,7 +254,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 121,
+    id: 21,
     arabic: 'رَبَّنَا لاَ تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِینَ',
     englishTranslation: 'Our Lord, do not place us with the wrongdoing people.',
     spellingEng: 'Rabbanaa laa taj’alnaa ma’al qawmiz zaalimeen',
@@ -263,7 +263,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 122,
+    id: 22,
     arabic:
       'رَبَّنَا افْتَحْ بَیْنَنَا وَبَیْنَ قَوْمِنَا بِالْحَقِّ وَأَنتَ خَیْرُ الْفَاتِحِینَ',
     englishTranslation:
@@ -276,7 +276,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 123,
+    id: 23,
     arabic: 'رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ',
     englishTranslation:
       'Our Lord, pour upon us patience and let us die as Muslims [in submission to You].',
@@ -287,7 +287,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 124,
+    id: 24,
     arabic:
       'رَبَّنَا لاَ تَجْعَلْنَا فِتْنَةً لِّلْقَوْمِ الظَّالِمِینَ ; وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِینَ',
     englishTranslation:
@@ -300,7 +300,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 125,
+    id: 25,
     arabic:
       'رَبَّنَآ إِنَّكَ تَعْلَمُ مَا نُخْفِى وَمَا نُعْلِنُ ۗ وَمَا يَخْفَىٰ عَلَى ٱللَّهِ مِن شَىْءٍۢ فِى ٱلْأَرْضِ وَلَا فِى ٱلسَّمَآءِ',
     englishTranslation:
@@ -313,7 +313,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 126,
+    id: 26,
     arabic:
       'رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَآءِ',
     englishTranslation:
@@ -326,7 +326,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 127,
+    id: 27,
     arabic:
       'رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِینَ یَوْمَ یَقُومُ الْحِسَابُ',
     englishTranslation:
@@ -339,7 +339,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 128,
+    id: 28,
     arabic:
       'رَبَّنَآ ءَتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا',
     englishTranslation:
@@ -352,7 +352,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 129,
+    id: 29,
     arabic:
       'رَبَّنَآ إِنَّنَا نَخَافُ أَن يَفْرُطَ عَلَيْنَآ أَوْ أَن يَطْغَى',
     englishTranslation:
@@ -365,7 +365,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 130,
+    id: 30,
     arabic:
       'رَبَّنَآ ءَمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنتَ خَیْرُ الرَّاحِمِینَ',
     englishTranslation:
@@ -378,7 +378,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 131,
+    id: 31,
     arabic:
       'رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ إِنَّ عَذَابَهَا كَانَ غَرَامًا إِنَّهَا سَآءَتْ مُسْتَقَرًّا وَمُقَامًا',
     englishTranslation:
@@ -391,7 +391,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 132,
+    id: 32,
     arabic:
       'رَبَّنَا ھَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّیَّاتِنَا قُرَّةَ أَعْیُنٍ وَاجْعَلْنَا لِلْمُتَّقِینَ إِمَامًا',
     englishTranslation:
@@ -404,7 +404,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 133,
+    id: 33,
     arabic: 'رَبَّنَا لَغَفُورٌ شَكُورٌ',
     englishTranslation: 'Our Lord is Forgiving and Appreciative',
     spellingEng: 'Rabbana la Ghafurun shakur',
@@ -413,7 +413,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 134,
+    id: 34,
     arabic:
       'رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَّحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِینَ تَابُوا وَاتَّبَعُوا سَبِیلَكَ وَقِھِمْ عَذَابَ الْجَحِیمِ',
     englishTranslation:
@@ -426,7 +426,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 135,
+    id: 35,
     arabic:
       'رَبَّنَا وَأَدْخِلْھُمْ جَنَّاتِ عَدْنٍ الَّتِي وَعَدتَّھُم وَمَن صَلَحَ مِنْ آبَائِھِمْ وَأَزْوَاجِھِمْ وَذُرِّیَّاتِھِمْ إِنَّكَ أَنتَ الْعَزِیزُ الْحَكِیمُ وَقِھِمُ السَّیِّئَاتِ وَمَن تَقِ السَّیِّئَاتِ یَوْمَئِذٍ فَقَدْ رَحِمْتَھُ وَذَلِكَ ھُوَ الْفَوْزُ الْعَظِیمُ',
     englishTranslation:
@@ -439,7 +439,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 136,
+    id: 36,
     arabic:
       'رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِّلَّذِينَ اٰمَنُوا',
     englishTranslation:
@@ -452,7 +452,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 137,
+    id: 37,
     arabic: 'رَبَّنَآ إِنَّكَ رَؤُوفٌ رَّحِیمٌ',
     englishTranslation: 'Our Lord, indeed You are Kind and Merciful.',
     spellingEng: 'Rabbannaaa innaka Ra’oofur Raheem',
@@ -461,7 +461,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 138,
+    id: 38,
     arabic:
       'رَّبَّنَا عَلَیْكَ تَوَكَّلْنَا وَإِلَیْكَ أَنَبْنَا وَإِلَیْكَ الْمَصِیرُ',
     englishTranslation:
@@ -474,7 +474,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 139,
+    id: 39,
     arabic:
       'رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِّلَّذِینَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَآ إِنَّكَ أَنتَ الْعَزِیزُ الْحَكِیمُ',
     englishTranslation:
@@ -487,7 +487,7 @@ const rabbanaDuas = [
     tags: [],
   },
   {
-    id: 140,
+    id: 40,
     arabic:
       'رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَآ ۖ إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِیرٌ',
     englishTranslation:

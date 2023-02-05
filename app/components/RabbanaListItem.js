@@ -3,6 +3,7 @@ import React from 'react';
 
 const RabbanaListItem = ({item}) => {
   const {id, arabic, spellingEng, englishTranslation, banglaTranslation} = item;
+
   return (
     <View style={styles.container}>
       <Text style={styles.number}>{id}</Text>
