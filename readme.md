@@ -37,7 +37,7 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [ ]  Screens
   - [x]  home screen
   - [ ]  daily duas screen
-  - [ ]  dua rabbana screen
+  - [x]  dua rabbana screen
   - [x]  asmaul husna screen
   - [ ]  undefined 
   - [ ]  undefined
