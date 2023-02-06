@@ -5,7 +5,7 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 
 
 ### Project Possible Category
-
+  
 - Daily Duas (such as morning and evening prayers)
 - Duas for specific occasions or events (such as weddings, funerals, etc.)
 - Duas for specific purposes (such as protection, guidance, forgiveness, etc.)
