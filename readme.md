@@ -29,15 +29,14 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 
 - [ ]  logo and app icon design
 - [ ]  icon set selection
-- [ ]  lottie animation ready
 - [ ]  font selection and include into the project
 - [ ]  app descripton
-- [x]  scafolding react native app
-- [x]  basic folder creation
-- [x]  react navigation setup
-- [x]  stack navigator setup
-- [ ]  tav navigator setup
-- [x]  lottie animation library
+- [x]  scafolding react native app ✅
+- [x]  basic folder creation ✅
+- [x]  react navigation setup ✅
+- [x]  stack navigation setup ✅
+- [x]  tab navigation setup complete ✅
+
 - [ ]  **Screens**
   - [x]  home screen
   - [ ]  daily duas screen
