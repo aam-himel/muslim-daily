@@ -4,23 +4,16 @@ import {
   Text,
   View,
   SafeAreaView,
-  Image,
   ScrollView,
   Pressable,
-  TouchableOpacity,
 } from 'react-native';
-import {useTheme} from '@react-navigation/native';
-import Lottie from 'lottie-react-native';
 
 import Card from '../components/Card';
-
-const notification = require('../images/notification.png');
 
 const HomeScreen = ({navigation}) => {
   const cardText = 'A collection of powerful duas starting with rabbana.';
   const cardTextAsmaulHusna = 'Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )';
   const cardTextDuasDaily = 'Some of the importants duas for everyday.';
-  const {colors} = useTheme();
 
   return (
     <SafeAreaView style={[styles.container]}>
@@ -30,18 +23,6 @@ const HomeScreen = ({navigation}) => {
             <Text style={styles.title}>Muslim </Text>
             <Text style={[{marginTop: -16}, styles.title]}>Daily. </Text>
           </View>
-          <Lottie
-            style={{
-              width: 150,
-              position: 'absolute',
-              top: 0,
-              right: 0,
-              zIndex: -1,
-            }}
-            source={require('../lotties/bg.json')}
-            autoPlay
-            loop
-          />
         </View>
 
         <View style={styles.gap}></View>
@@ -51,14 +32,14 @@ const HomeScreen = ({navigation}) => {
             <Card
               title={'Daily Duas.'}
               width={'100%'}
-              height={152}
+              height={140}
               round={20}
               content={cardTextDuasDaily}
             />
           </Pressable>
           <View
             style={{
-              marginTop: 24,
+              marginTop: 16,
               flexDirection: 'row',
               alignItems: 'flex-start',
               justifyContent: 'space-between',
@@ -78,7 +59,7 @@ const HomeScreen = ({navigation}) => {
               <Card
                 title={'Allah’s 99 names.'}
                 width={158}
-                height={224}
+                height={210}
                 round={20}
                 icon={false}
                 content={cardTextAsmaulHusna}
@@ -90,20 +71,13 @@ const HomeScreen = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'flex-end',
               justifyContent: 'space-between',
-              marginTop: 12,
             }}>
-            <Card
-              title={'Daily Duas.'}
-              width={158}
-              height={224}
-              round={20}
-              marginTop={-24}
-            />
+            <Card title={'Daily Duas.'} width={158} height={200} round={20} />
             <Pressable onPress={() => navigation.navigate('Playground')}>
               <Card
                 title={'Skia Playground'}
                 width={158}
-                height={190}
+                height={170}
                 round={20}
                 icon={false}
               />
@@ -129,18 +103,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginBottom: 20,
   },
   title: {
     fontSize: 36,
     fontWeight: 'bold',
     color: '#25282B',
   },
-  gap: {
-    marginVertical: 20,
-  },
-  cardFeatured: {
-    flex: 1,
-  },
+  gap: {},
+  cardFeatured: {},
   cardTitle: {},
   cardLarge: {},
   cardSmall: {},

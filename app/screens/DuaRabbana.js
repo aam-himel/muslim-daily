@@ -1,11 +1,8 @@
 import {StyleSheet, Text, View, ScrollView, FlatList} from 'react-native';
 import React, {useEffect} from 'react';
-import {useNavigation} from '@react-navigation/native';
 import Header from '../components/Header';
 import RabbanaListItem from '../components/RabbanaListItem';
 import rabbanaDuas from '../data/rabbanaDuas';
-import asmaulHusna from '../data/asmaulHusna';
-import ListItemName from '../components/ListItemName';
 const renderItem = ({item}) => {
   return <RabbanaListItem item={item} />;
 };
