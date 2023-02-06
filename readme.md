@@ -23,6 +23,7 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - Taking notes (🔥NEW🔥)
 - Islamic calendar and events (🔥NEW🔥)
 - Prayer times and reminders (🔥NEW🔥)
+- Daily task tracking (🔥NEW🔥)
 
 ### Project Todo:
 
