@@ -38,10 +38,10 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [x]  tab navigation setup complete ✅
 
 - [ ]  **Screens**
-  - [x]  home screen
+  - [x]  home screen ✅
   - [ ]  daily duas screen
-  - [x]  dua rabbana screen
-  - [x]  asmaul husna screen
+  - [x]  dua rabbana screen ✅
+  - [x]  asmaul husna screen ✅
   - [ ]  undefined 
   - [ ]  undefined
 - [ ]  prepare all the data related to these screens
