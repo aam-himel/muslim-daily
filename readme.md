@@ -1,7 +1,9 @@
-# Muslim Daily App
+# Muslim Daily App (🔃 On progress)
 
-It's a app for muslim brothers and sister to find quickly some of the 
+This app is for my muslim brothers and sister to find quickly some of the 
 poweful and useful duas, tips, info etc. May allah gives us the opportunity to help each other through our deeds.
+
+
 
 
 ### Project Possible Category
