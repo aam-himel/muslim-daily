@@ -20,6 +20,9 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - Duas for health and healing
 - Duas for success and prosperity
 - Duas for forgiveness and repentance.
+- Taking notes (🔥NEW🔥)
+- Islamic calendar and events (🔥NEW🔥)
+- Prayer times and reminders (🔥NEW🔥)
 
 ### Project Todo:
 
@@ -34,7 +37,7 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [x]  stack navigator setup
 - [ ]  tav navigator setup
 - [x]  lottie animation library
-- [ ]  Screens
+- [ ]  **Screens**
   - [x]  home screen
   - [ ]  daily duas screen
   - [x]  dua rabbana screen
