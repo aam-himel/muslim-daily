@@ -73,9 +73,9 @@ const HomeScreen = ({navigation}) => {
               justifyContent: 'space-between',
             }}>
             <Card title={'Daily Duas.'} width={158} height={200} round={20} />
-            <Pressable onPress={() => navigation.navigate('Playground')}>
+            <Pressable onPress={() => navigation.navigate('Tasbih')}>
               <Card
-                title={'Skia Playground'}
+                title={'Tasbih'}
                 width={158}
                 height={170}
                 round={20}

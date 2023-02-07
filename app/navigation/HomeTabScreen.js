@@ -1,7 +1,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {HomeScreen, DailyDuas, AsmaulHusna, DuaRabbana} from '../screens';
+import {
+  HomeScreen,
+  DailyDuas,
+  AsmaulHusna,
+  DuaRabbana,
+  TasbihScreen,
+} from '../screens';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const HomeTabScreen = () => {

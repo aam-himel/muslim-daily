@@ -27,6 +27,13 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - Prayer times and reminders (🔥NEW🔥)
 - Daily task tracking (🔥NEW🔥)
 
+### Project Possible Category
+
+- [ ] Daily Duas
+- [ ] Salah
+- [ ] Ramadam
+- [ ] Tools
+
 ### Project Todo:
 
 - [ ]  logo and app icon design

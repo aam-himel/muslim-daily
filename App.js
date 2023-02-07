@@ -9,6 +9,7 @@ import {
 
 import {useColorScheme} from 'react-native';
 import HomeStackScreen from './app/navigation/HomeTabScreen';
+import TasbihScreen from './app/screens/TasbihScreen';
 
 function App() {
   const Stack = createNativeStackNavigator();
@@ -21,6 +22,12 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeStackScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="Tasbih"
+          component={TasbihScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

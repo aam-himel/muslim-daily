@@ -9,7 +9,6 @@ import {
 import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Lottie from 'lottie-react-native';
 
 import asmaulHusna from '../data/asmaulHusna';
 import ListItemName from '../components/ListItemName';
@@ -40,17 +39,6 @@ const AsmaulHusna = () => {
           <Text style={styles.subTitle}>
             Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )
           </Text>
-          <View style={styles.scrolldown}>
-            <Lottie
-              style={{
-                width: 24,
-                color: 'white',
-              }}
-              source={require('../lotties/scrold.json')}
-              autoPlay
-              loop
-            />
-          </View>
         </View>
         <View>
           <FlatList
