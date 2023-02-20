@@ -1,26 +1,37 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import React, {useEffect} from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
-import {useNavigation} from '@react-navigation/native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import React from 'react'
 
-const Header = () => {
-  const navigation = useNavigation();
-  useEffect(() => {
-    navigation.setOptions({
-      title: '',
-      headerTitleAlign: 'center',
-      headerTransparent: true,
-      headerLeft: () => (
-        <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Icon name="chevron-back-outline" size={24} color="black" />
-        </TouchableOpacity>
-      ),
-    });
-  }, []);
+const Header = ({ title }) => {
+  return (
+    <SafeAreaView>
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text> {title} </Text>
+        </View>
+      </View>
+    </SafeAreaView>
+  )
+}
 
-  return <></>;
-};
+export default Header
 
-export default Header;
-
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+  },
+  header: {
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    elevation: 2,
+    position: 'relative',
+    backgroundColor: 'white'
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold'
+  }
+})

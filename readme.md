@@ -66,3 +66,25 @@ poweful and useful duas, tips, info etc. May allah gives us the opportunity to h
 - [ ]  1000+ downloads withing 1st month
 - [ ]  adding new features
 - [ ]  changes made based on user feedback
+
+
+### Ramadan Special
+ 
+
+### Research 
+
+Forest Green (#228B22)
+Lime Green (#32CD32)
+Emerald Green (#50C878)
+Olive Green (#808000)
+Mint Green (#98FF98)
+Dark Green (#006400)
+Sea Green (#2E8B57)
+Kelly Green (#4CBB17)
+Hunter Green (#355E3B)
+Chartreuse Green (#DFFF00)
+
+# App pckages and resources
+
+- react-native-calendar-strip
+- http://api.aladhan.com/
