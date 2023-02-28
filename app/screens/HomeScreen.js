@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   StyleSheet,
   View,
@@ -10,12 +10,37 @@ import {
 import HomeBottom from '../components/HomeBottom';
 import LocationSvg from '../svgs/Location';
 import SunRiseSvg from '../svgs/SunRise';
+import moment from 'moment';
+import axios from 'axios';
 
 const {height, width} = Dimensions.get('screen');
+
 const HomeScreen = ({navigation}) => {
-  const cardText = 'A collection of powerful duas starting with rabbana.';
-  const cardTextAsmaulHusna = 'Al-Asma-ul-Husna ( اَلاسْمَاءُ الْحُسناى )';
-  const cardTextDuasDaily = 'Some of the importants duas for everyday.';
+  const [presentDate, setPresentDate] = useState('');
+  const [prayerData, setPrayerData] = useState({});
+  const [prayerTimes, setPrayerTimes] = useState({});
+  // const [prayerData, setPrayerData] = useState({});
+
+  useEffect(() => {
+    let date = moment(new Date()).format('DD-MM-YYYY');
+    setPresentDate(date);
+    const url =
+      'https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2';
+    axios
+      .get(url)
+      .then(response => {
+        console.log(response.data.data.timings);
+        setPrayerTimes(response.data.data.timings);
+        setPrayerData(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+
+  const getCurrentData = data => {
+    return <Text style={styles.text}>{data}</Text>;
+  };
 
   return (
     <>
@@ -27,7 +52,7 @@ const HomeScreen = ({navigation}) => {
                 <LocationSvg />
               </View>
               <View>
-                <Text style={styles.text}>12, February,৮ ফাল্গুন </Text>
+                {/* <Text style={styles.text}>{readable ? readable : null}</Text> */}
                 <Text style={styles.text}>Magura, Bangladesh </Text>
               </View>
             </View>
@@ -48,7 +73,7 @@ const HomeScreen = ({navigation}) => {
             </View>
           </View>
           <View style={styles.bottomSection}>
-            <HomeBottom />
+            <HomeBottom prayerTimes={prayerTimes} />
           </View>
         </ScrollView>
       </SafeAreaView>

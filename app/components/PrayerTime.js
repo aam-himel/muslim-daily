@@ -2,12 +2,22 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {prayertimes} from '../data/prayertime';
 
-const PrayerTime = () => {
+const PrayerTime = ({prayerTimes}) => {
+  const {Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha} = prayerTimes;
+  const prayerArray = [
+    {title: 'Fajr', time: Fajr},
+    {title: 'Dhuhr', time: Dhuhr},
+    {title: 'Asr', time: Asr},
+    {title: 'Maghrib', time: Maghrib},
+    {title: 'Isha', time: Isha},
+    {title: 'Sunrise', time: Sunrise},
+  ];
+  console.log(prayerArray);
   return (
     <View>
       <Text style={styles.title}>নামাজের সময় সূচী</Text>
-      {prayertimes.map(prayer => (
-        <View key={prayer.id} style={styles.prayerItem}>
+      {prayerArray.map((prayer, index) => (
+        <View key={index} style={styles.prayerItem}>
           <Text style={styles.text}>{prayer.title}</Text>
           <Text style={styles.text}>{prayer.time}</Text>
         </View>

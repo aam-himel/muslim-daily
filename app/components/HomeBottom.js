@@ -5,12 +5,12 @@ import HomeSlider from './HomeSlider';
 import PrayerTime from './PrayerTime';
 import CategoryScrollList from './CategoryScrollList';
 
-const HomeBottom = () => {
+const HomeBottom = ({prayerTimes}) => {
   return (
     <View style={styles.container}>
       <SahriIftarTime />
-      <HomeSlider />
-      <PrayerTime />
+      {/* <HomeSlider /> */}
+      <PrayerTime prayerTimes={prayerTimes} />
       <CategoryScrollList />
     </View>
   );

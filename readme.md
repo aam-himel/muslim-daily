@@ -87,4 +87,7 @@ Chartreuse Green (#DFFF00)
 # App pckages and resources
 
 - react-native-calendar-strip
+- https://www.islamicfinder.org/
 - http://api.aladhan.com/
+- https://api.aladhan.com/v1/calendarByCity/2023/2?city=magura&country=Bangladesh&method=2
+- https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2
