@@ -12,35 +12,29 @@ import LocationSvg from '../svgs/Location';
 import SunRiseSvg from '../svgs/SunRise';
 import moment from 'moment';
 import axios from 'axios';
+import PrayerTime from '../components/PrayerTime';
 
 const {height, width} = Dimensions.get('screen');
 
 const HomeScreen = ({navigation}) => {
-  const [presentDate, setPresentDate] = useState('');
-  const [prayerData, setPrayerData] = useState({});
-  const [prayerTimes, setPrayerTimes] = useState({});
-  // const [prayerData, setPrayerData] = useState({});
-
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const url =
+    'https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2';
   useEffect(() => {
-    let date = moment(new Date()).format('DD-MM-YYYY');
-    setPresentDate(date);
-    const url =
-      'https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2';
-    axios
-      .get(url)
-      .then(response => {
-        console.log(response.data.data.timings);
-        setPrayerTimes(response.data.data.timings);
-        setPrayerData(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    const fetchData = async () => {
+      const result = await axios.get(url);
+      setData(result.data);
+    };
+    fetchData();
   }, []);
 
-  const getCurrentData = data => {
-    return <Text style={styles.text}>{data}</Text>;
-  };
+  if (!data) {
+    return <Text>Loading...</Text>;
+  }
+
+  const {code, status, data: apiData} = data;
+  const {timings} = apiData;
 
   return (
     <>
@@ -52,7 +46,6 @@ const HomeScreen = ({navigation}) => {
                 <LocationSvg />
               </View>
               <View>
-                {/* <Text style={styles.text}>{readable ? readable : null}</Text> */}
                 <Text style={styles.text}>Magura, Bangladesh </Text>
               </View>
             </View>
@@ -73,7 +66,11 @@ const HomeScreen = ({navigation}) => {
             </View>
           </View>
           <View style={styles.bottomSection}>
-            <HomeBottom prayerTimes={prayerTimes} />
+            <Text style={styles.sectionTitle}>নামাজের সময় সূচী</Text>
+
+            {Object.entries(timings).map(([key, value]) => (
+              <PrayerTime key={key} title={key} time={value} />
+            ))}
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -103,12 +100,19 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     marginTop: -30,
     backgroundColor: '#F5F5F5',
+    paddingHorizontal: 16,
   },
   box: {
     width: '50%',
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
+  },
+  sectionTitle: {
+    marginVertical: 24,
+    color: '#000',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
   text: {
     fontSize: 14,

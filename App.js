@@ -14,6 +14,7 @@ import TasbihScreen from './app/screens/TasbihScreen';
 function App() {
   const Stack = createNativeStackNavigator();
   const scheme = useColorScheme();
+
   return (
     <NavigationContainer
       theme={scheme === 'dark' ? DarkTheme : DefaultTheme}
