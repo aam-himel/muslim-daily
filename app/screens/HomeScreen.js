@@ -7,11 +7,13 @@ import {
   Dimensions,
   Text,
 } from 'react-native';
-import HomeBottom from '../components/HomeBottom';
+import moment from 'moment';
+
+import axios from 'axios';
+import Geolocation from '@react-native-community/geolocation';
+
 import LocationSvg from '../svgs/Location';
 import SunRiseSvg from '../svgs/SunRise';
-import moment from 'moment';
-import axios from 'axios';
 import PrayerTime from '../components/PrayerTime';
 
 const {height, width} = Dimensions.get('screen');
@@ -22,6 +24,9 @@ const HomeScreen = ({navigation}) => {
   const url =
     'https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2';
   useEffect(() => {
+    // get user location
+    Geolocation.getCurrentPosition(info => console.log(info));
+    // featching api data
     const fetchData = async () => {
       const result = await axios.get(url);
       setData(result.data);
