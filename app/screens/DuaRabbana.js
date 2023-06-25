@@ -46,10 +46,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 10,
   },
-  contaier: {
-    flex: 1,
-    backgroundColor: '#8B6BEC',
-  },
+
   title: {
     fontSize: 28,
     fontWeight: 'bold',
