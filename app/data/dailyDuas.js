@@ -67,10 +67,25 @@ const dailyActivityDuas = [
   },
 ];
 
-
-const duaCategories = {
-    "Waking up",
-    "Nightmares"
-}
+const duaCategories = [
+  'Waking up',
+  'Nightmares',
+  'Clothes',
+  'Lavatory & Wudu',
+  'Home',
+  'Adhan & Masjid',
+  'Istikharah',
+  'Gatherings',
+  'Food & Drink',
+  'Travel',
+  'Death',
+  'Nature',
+  'Social Interactions',
+  'Protection of Iman',
+  'Difficulties & Happiness',
+  'Hajj & Umrah',
+  'Money & Shopping',
+  'Marriage & Children',
+];
 
 export {morningDuas};
