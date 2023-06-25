@@ -1,4 +1,11 @@
-import {StyleSheet, Text, View, ScrollView, FlatList} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  FlatList,
+  SafeAreaView,
+} from 'react-native';
 import React, {useEffect} from 'react';
 import Header from '../components/Header';
 import RabbanaListItem from '../components/RabbanaListItem';
@@ -10,22 +17,22 @@ const renderItem = ({item}) => {
 const DuaRabbana = () => {
   return (
     <>
-      <Header />
-
-      <ScrollView>
-        <View style={styles.top}>
-          <Text style={styles.title}>40 Rabbana Duas </Text>
-          <Text style={styles.subTitle}>QURANIC Duas</Text>
-        </View>
-        <View>
-          <FlatList
-            data={rabbanaDuas}
-            renderItem={renderItem}
-            keyExtractor={item => item.id}
-            scrollEnabled={false}
-          />
-        </View>
-      </ScrollView>
+      <SafeAreaView>
+        <ScrollView>
+          <View style={styles.top}>
+            <Text style={styles.title}>40 Rabbana Duas </Text>
+            <Text style={styles.subTitle}>QURANIC Duas</Text>
+          </View>
+          <View>
+            <FlatList
+              data={rabbanaDuas}
+              renderItem={renderItem}
+              keyExtractor={item => item.id}
+              scrollEnabled={false}
+            />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </>
   );
 };

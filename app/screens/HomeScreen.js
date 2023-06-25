@@ -15,24 +15,25 @@ import Geolocation from '@react-native-community/geolocation';
 import LocationSvg from '../svgs/Location';
 import SunRiseSvg from '../svgs/SunRise';
 import PrayerTime from '../components/PrayerTime';
+import SahriIftarTime from '../components/SahriIftarTime';
 
 const {height, width} = Dimensions.get('screen');
 
 const HomeScreen = ({navigation}) => {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
   const url =
-    'https://api.aladhan.com/v1/timings/28-02-2023?latitude=51.508515&longitude=-0.1254872&method=2';
-  useEffect(() => {
-    // get user location
-    Geolocation.getCurrentPosition(info => console.log(info));
-    // featching api data
-    const fetchData = async () => {
-      const result = await axios.get(url);
-      setData(result.data);
-    };
-    fetchData();
-  }, []);
+    'https://api.aladhan.com/v1/timingsByCity/07-03-2023?city=Magura&country=Bangladesh&method=2';
+  // useEffect(() => {
+  //   // get user location
+  //   Geolocation.getCurrentPosition(info => console.log(info));
+  //   // featching api data
+  //   const fetchData = async () => {
+  //     const result = await axios.get(url);
+  //     setData(result.data);
+  //     console.log(result.data);
+  //   };
+  //   fetchData();
+  // }, []);
 
   if (!data) {
     return <Text>Loading...</Text>;
@@ -40,6 +41,16 @@ const HomeScreen = ({navigation}) => {
 
   const {code, status, data: apiData} = data;
   const {timings} = apiData;
+  const {Sunrise, Sunset} = timings;
+  const {Fajr, Dhuhr, Asr, Maghrib, Isha} = timings;
+
+  const dailyPrayers = {
+    Fajr,
+    Dhuhr,
+    Asr,
+    Maghrib,
+    Isha,
+  };
 
   return (
     <>
@@ -61,19 +72,20 @@ const HomeScreen = ({navigation}) => {
               <View style={styles.sunTime}>
                 <View>
                   <Text style={styles.text}>সূর্যোদয়</Text>
-                  <Text style={styles.text}>০৬ঃ২৩</Text>
+                  <Text style={styles.text}>{Sunrise}</Text>
                 </View>
                 <View>
                   <Text style={styles.text}>সূর্যাস্ত</Text>
-                  <Text style={styles.text}>০৬ঃ২৩</Text>
+                  <Text style={styles.text}>{Sunset}</Text>
                 </View>
               </View>
             </View>
           </View>
           <View style={styles.bottomSection}>
+            <SahriIftarTime />
             <Text style={styles.sectionTitle}>নামাজের সময় সূচী</Text>
 
-            {Object.entries(timings).map(([key, value]) => (
+            {Object.entries(dailyPrayers).map(([key, value]) => (
               <PrayerTime key={key} title={key} time={value} />
             ))}
           </View>
@@ -96,7 +108,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignContent: 'center',
     justifyContent: 'space-between',
-    // backgroundColor: '#00FF7F',
     backgroundColor: '#233E8B',
   },
   bottomSection: {

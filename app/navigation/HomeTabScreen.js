@@ -56,7 +56,11 @@ const HomeTabScreen = () => {
           headerShown: false,
         }}
       />
-      <HomeTab.Screen name="DuaRabbana" component={DuaRabbana} />
+      <HomeTab.Screen
+        name="DuaRabbana"
+        component={DuaRabbana}
+        options={{headerShown: false}}
+      />
       <HomeTab.Screen name="AsmaulHusna" component={AsmaulHusna} />
     </HomeTab.Navigator>
   );

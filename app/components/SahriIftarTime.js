@@ -7,12 +7,12 @@ const SahriIftarTime = () => {
     <View style={styles.container}>
       <View style={styles.iftarCard}>
         <Text>আজকের ইফতার</Text>
-        <Text style={styles.time}>০৬ঃ১০</Text>
+        <Text style={styles.time}>06:20</Text>
         <AlermSvg />
       </View>
       <View style={styles.sehriCard}>
         <Text>আজকের ইফতার</Text>
-        <Text style={styles.time}>০৬ঃ১০</Text>
+        <Text style={styles.time}>06:30</Text>
         <AlermSvg />
       </View>
     </View>
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     width: '100%',
     columnGap: 12,
     flexDirection: 'row',
+    marginTop: 30,
   },
   iftarCard: {
     flex: 0.5,
